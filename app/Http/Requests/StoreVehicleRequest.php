@@ -5,18 +5,10 @@ namespace App\Http\Requests;
 use App\Enums\Cambio;
 use App\Enums\Combustivel;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Enum;
 
 class StoreVehicleRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     */
-    public function authorize(): bool
-    {
-        return auth()->check();
-    }
 
     /**
      * Get the validation rules that apply to the request.
